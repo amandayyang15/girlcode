@@ -639,6 +639,18 @@ header {
     text-align: center;
 }
 
+.capsule6-imgs {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+
+}
+
+.capsule6-imgs img {
+    max-width:100%;
+    height: auto;
+    width: 175px;
+}
 /* END PAGE LAYOUT */
 .ep-wrapper {
     display: grid;
