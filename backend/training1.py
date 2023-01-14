@@ -44,3 +44,7 @@ pred = clf.predict(X_test)
 #print(metrics.classification_report(Y_test, pred, target_names=listx))
 print('The accuracy of the Decision Tree is',"{:.3f}".format(metrics.accuracy_score(pred,Y_test)))
 #accuracy: 0.622
+
+import pickle
+with open('model.pickle','wb') as f:
+  pickle.dump(clf, f)
