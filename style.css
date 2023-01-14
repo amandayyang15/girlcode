@@ -131,7 +131,7 @@ a {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-direction: alternate;
-    animation-duration: 7s;
+    animation-duration: 5s;
 }
 
 @keyframes fadein1 {
@@ -157,7 +157,7 @@ a {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-direction: alternate;
-    animation-duration: 7s;
+    animation-duration: 5s;
 }
 
 @keyframes fadein2 {
@@ -274,9 +274,17 @@ header {
     padding: 10px;
 }
 
-.step21-box:hover {
+.step21-sel button{
+    background-color: transparent;
+    border: transparent;
+}
+
+.step21-sel  button:hover {
     background-color: var(--color3);
-    /* or do box outline */
+}
+
+.step21-sel  button:focus {
+    background-color: var(--color3);
 }
 
 /*STEP 2.2 LAYOUT*/
@@ -292,13 +300,23 @@ header {
 }
 
 .step22-img {
+    z-index: 0;
     position: absolute;
     display: flex;
     flex-flow: row;
+    width: 100%;
+    height: 100%;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.step22-img img{
+    height: 500px;
 }
 
 .step22-wrapper {
+    z-index: 1;
     display: grid;
     grid-template-columns: 1fr;
     align-content: center;
@@ -307,27 +325,205 @@ header {
     width: 100%;
     height: 100vh;
     gap: 80px;
-}as
-
-
-
-.step22-paddingWrapper {
-    padding: 0 400px;
 }
 
 .step22-wrapper h2{
     margin: 0;
+    padding: 0 400px;
 }
 
 .step22-sel p{
     margin: 0;
+
 }
 
 .step22-sel {
     display: flex;
     flex-flow: row;
-    width: 514.66px;
     justify-content: space-between;
     align-items: center;
-    padding: 100px 0;
+    width: 100%;
+    padding: 100px 400px;
+}
+
+.step22-abox { /*bottom nav bar*/
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 400px;
+}
+
+.plain-link button{
+    background-color: transparent;
+    border: transparent;
+}
+
+.plain-link button:hover{
+    background-color: var(--color3);
+}
+
+.plain-link button:focus{
+    background-color: var(--color3);
+}
+
+/*STEP 3.1 LAYOUT*/
+.step31-wrapper {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    align-content: center;
+    justify-items: center;
+    margin: 0px auto;
+    width: 100%;
+    height: 100vh;
+    padding: 0 400px;
+}
+
+.step31-img img{
+    height: 400px;
+    padding: 0 0 0 20px;
+}
+
+.step31-text {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.step31-wrapper h2{
+    text-align: right;
+}
+
+.step31-sel p{
+    margin: 0;
+}
+
+.step31-sel {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    justify-content: space-between;
+    align-self: end;
+    text-align: right;
+    justify-items: center;
+    gap: 30px;
+
+}
+
+.step31-abox {
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.step31-abox button{
+    background-color: transparent;
+    border: transparent;
+}
+
+.step31-abox  button:hover {
+    background-color: var(--color3);
+}
+
+.step21-sel  button:focus {
+    background-color: var(--color3);
+}
+
+/*STEP 3.2 LAYOUT*/
+.step32-wrapper {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    margin: 0px auto;
+    width: 100%;
+    height: 100vh;
+    padding: 0 400px;
+    gap: 60px;
+}
+
+.step32-box {
+    display:flex;
+    justify-content: center;
+    aspect-ratio: 1;
+    width: 150px;
+}
+
+.step32-box img{
+    height: 140px;
+}
+
+.step32-text {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.step32-wrapper h2{
+    text-align: left;
+    margin: 0 0 50px 0;
+}
+
+.step32-sel {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    justify-content: space-between;
+    align-self: end;
+    text-align: right;
+    justify-items: center;
+}
+
+.step32-box img{
+    height: 150px;
+    width: auto;
+}
+
+.step32-abox {
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.step32-sel button{
+    background-color: transparent;
+    border: transparent;
+}
+
+.step32-sel  button:hover {
+    background-color: var(--color3);
+}
+
+.step32-sel  button:focus {
+    background-color: var(--color3);
+}
+
+/* CAPSULE-1 LAYOUT */
+.capsule-1-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 700px;
+    margin: 0px auto;
+    width: 100%;
+    height: 100vh;
+    padding: 0 100px;
+}
+
+.capsule-1-textBox {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.img {
+    display: flex;
+    justify-content: end;
+    align-self: center;
+    height: 600px;
 }
