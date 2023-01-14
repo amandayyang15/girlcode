@@ -13,7 +13,7 @@ This website can be viewed by downloading all HTML/CSS/Assets and starting from 
 
 # back-end
 
-The back-end is created using Python. 
+The back-end is created using Python.
 
 
 Resources Used:
